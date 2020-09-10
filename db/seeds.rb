@@ -26,6 +26,8 @@ pokeattk2 = PokemonAttack.create(attack: scratch, pokemon: charmander)
 pokeattk3 = PokemonAttack.create(attack: leech_seed, pokemon: bulbasaur)
 pokeattk4 = PokemonAttack.create(attack: thunder_shock, pokemon: pikachu)
 
+#usrpoke1 = UserPokemon.create(user_id: user1.id, pokemon_id: squirtle.id)
+
 usrpoke1 = UserPokemon.create(user: user1, pokemon: pikachu)
 usrpoke2 = UserPokemon.create(user: user2, pokemon: squirtle)
 usrpoke3 = UserPokemon.create(user: user3, pokemon: charmander)
