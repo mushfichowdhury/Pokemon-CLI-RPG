@@ -1,11 +1,13 @@
 require 'bundler'
-Bundler.require
-require_all 'bin'
 require 'poke-api-v2'
-
-ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/development.db')
+require 'tty-prompt'
+Bundler.require
+require_all 'app'
+require_all 'bin'
 require_all 'lib'
 
+
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/development.db')
 ActiveRecord::Base.logger = nil
 
 # ActiveRecord::Base.establish_connection(

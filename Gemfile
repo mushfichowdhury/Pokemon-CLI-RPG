@@ -8,4 +8,12 @@ gem "sqlite3"
 gem "pry"
 gem "require_all"
 gem 'poke-api-v2'
+gem 'tty'
+gem 'tty-prompt'
+gem 'tty-color'
+gem 'pastel'
+gem 'tty-font'
+gem 'tty-progressbar'
+gem 'tty-spinner'
+
 
