@@ -7,5 +7,5 @@ class Pokemon < ActiveRecord::Base
         UserPokemon.create(user_id: player.id, pokemon_id: poke.id)
     end
 
-    
+
 end
