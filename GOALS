@@ -5,3 +5,9 @@ Be able to call a Pokemon & access their information
 Create "dummy seeds" - Then decide if we will use the API or hard code going forward
 
 Set up initial basic CLI
+
+New Goals:
+Add starter Pokemon to UserPokemon.
+Finalize the .add method.
+Test everything once this is done, and fix any new situations.
+If all goes well, look into incorporating music. If not, focus on primary objectives.

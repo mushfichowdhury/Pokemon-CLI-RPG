@@ -49,7 +49,7 @@ tackle = Attack.create(name: "nil", damage: 13)
 # usrpoke1 = UserPokemon.create(user_id: user1.id, pokemon_id: pikachu.id)
 # usrpoke2 = UserPokemon.create(user_id: user2.id, pokemon_id: squirtle.id)
 # usrpoke3 = UserPokemon.create(user_id: user3.id, pokemon_id: charmander.id)
-# usrpoke4 = UserPokemon.create(user_id: user4.id, pokemon_id: bulbasaur.id)
+usrpoke4 = UserPokemon.create(user_id: user4.id, pokemon_id: bulbasaur.id)
 
 #usrpoke1 = UserPokemon.create(user: user1, pokemon: pikachu)
 #usrpoke2 = UserPokemon.create(user: user2, pokemon: squirtle)

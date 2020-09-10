@@ -9,38 +9,6 @@ class PokemonRPG
         @pastel = Pastel.new
     end
 
-    def starter_pokemon        
-        puts "I have three Pokemon in front of me..." 
-        prompt.select("Choose one:") do |menu|
-            bulb = menu.choice pastel.green("Bulbasaur")
-            squirt = menu.choice pastel.cyan("Squirtle")
-            char = menu.choice pastel.red("Charmander")
-            
-            if bulb == true 
-                starter_confirmation = prompt.yes?("The Seed Pokemon! Are you sure?")
-                    if starter_confirmation == true 
-                        add_pokemon_to_pokedex(bulbasaur)
-                    else 
-                        starter_pokemon
-                    end
-            elsif squirt == true
-                starter_confirmation = prompt.yes?("The Tiny Turtle Pokemon! Are you sure?")
-                if starter_confirmation == true 
-                    add_pokemon_to_pokedex(squirtle)
-                else 
-                    starter_pokemon
-                end
-            elsif char == true
-                starter_confirmation = prompt.yes?("The Lizard Pokemon! Are you sure?")
-                if starter_confirmation == true 
-                    add_pokemon_to_pokedex(charmander)
-                else 
-                    starter_pokemon
-                end
-            end
-        end
-    end
-
     def tall_grass
         puts "Welcome to Route 1!"
         tall_grass_choice = prompt.yes?("Do you want to walk around the grass?") do |menu|
@@ -93,7 +61,7 @@ class PokemonRPG
         User.intro_name
         puts "And now..."
         sleep(2)
-        starter_pokemon 
+        Pokemon.starter_pokemon 
         puts "Now that you have your starter..."
         sleep(2)
         change_location 

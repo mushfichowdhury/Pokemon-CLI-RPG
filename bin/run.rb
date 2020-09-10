@@ -7,6 +7,6 @@ app = PokemonRPG.new
 app.run 
 
 
-# # binding.pry 
+# # # binding.pry 
 
 
