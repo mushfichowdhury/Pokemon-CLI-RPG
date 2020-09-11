@@ -20,7 +20,7 @@ class Pokemon < ActiveRecord::Base
             elsif starter_choice == "Squirtle"
                 UserPokemon.create(user_id: User.last.id, pokemon_id: squirtle.id)
             elsif starter_choice == "Charmander"
-                    UserPokemon.create(user_id: User.last.id, pokemon_id: charmander.id)
+                UserPokemon.create(user_id: User.last.id, pokemon_id: charmander.id)
             end
         sleep(1)
         print TTY::Box.frame { pastel.green("Congratulations! You've captured #{starter_choice}!") }
@@ -38,6 +38,7 @@ class Pokemon < ActiveRecord::Base
         puts "In order to do so, you must visit various locations and catch wild pokemon!"
         sleep(2)
         prompt.yes?("Are you ready?")
+        sleep (3)
     end
 
 end

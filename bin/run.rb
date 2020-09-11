@@ -3,7 +3,7 @@ require 'poke-api-v2'
 require 'pry'
 
 
-app = PokemonRPG.new 
+app = PokemonRPG.new
 app.run 
 
 
