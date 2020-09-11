@@ -41,18 +41,22 @@ GEM
       activerecord (>= 4.1)
       sinatra (>= 1.0)
     sqlite3 (1.4.2)
-    strings-ansi (0.1.0)
+    strings (0.2.0)
+      strings-ansi (~> 0.2)
+      unicode-display_width (~> 1.5)
+      unicode_utils (~> 1.4)
+    strings-ansi (0.2.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
     tty (0.1.0)
+    tty-box (0.6.0)
+      pastel (~> 0.8)
+      strings (~> 0.2.0)
+      tty-cursor (~> 0.7)
     tty-color (0.5.2)
     tty-cursor (0.7.1)
     tty-font (0.5.0)
-    tty-progressbar (0.17.0)
-      strings-ansi (~> 0.1.0)
-      tty-cursor (~> 0.7)
-      tty-screen (~> 0.7)
-      unicode-display_width (~> 1.6)
+    tty-progressbar (0.2.0)
     tty-prompt (0.22.0)
       pastel (~> 0.8)
       tty-reader (~> 0.8)
@@ -66,6 +70,7 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
+    unicode_utils (1.4.0)
     wisper (2.0.1)
     zeitwerk (2.4.0)
 
@@ -82,6 +87,7 @@ DEPENDENCIES
   sinatra-activerecord
   sqlite3
   tty
+  tty-box
   tty-color
   tty-font
   tty-progressbar

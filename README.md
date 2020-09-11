@@ -6,7 +6,6 @@ Installation Instructions:
 * Clone down
 * Run bundle install
 * Run ruby run.rb
-* Remember you movie facts and have fun!!
 
 User Stories:
 * As a user, I can travel to new locations (Forest, Beach, Tundra, Mountain, Cave)

@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(version: 2020_09_10_014459) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
-    t.integer "hp"
-    t.string "stats"
-    t.string "ability"
     t.string "location"
     t.string "description"
   end

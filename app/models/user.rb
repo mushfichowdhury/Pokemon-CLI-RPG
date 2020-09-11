@@ -13,15 +13,13 @@ class User < ActiveRecord::Base
         name_choice = gets.chomp
             if name_choice == false
                 puts "Sorry!"
-                intro_name
+                self.intro_name
             else
                 puts "Yes! I remember now! Your name is #{player.name}!"
             end
         player
+        puts "And now..."
     end
 
 end
-
-#   #{User.find_by(name: input).name}
-#   #{User.name}.last
 
