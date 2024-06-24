@@ -217,7 +217,7 @@ class PokemonRPG
     end
 
     def run
-        play_music("app/models/pokemon_theme.mp3")
+        # play_music("app/models/pokemon_theme.mp3")
         sleep(10)
         title
         sleep(3)
